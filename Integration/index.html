@@ -8,6 +8,10 @@
     <meta name="keywords" content="Developpeur, Web, HTML, CSS, JS, Javascript, PHP, Angular, symfony, Mysql, Sql">
     <meta name="author" content="PESCHARD-GLENARD François">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playball&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -15,36 +19,53 @@
         <h1>My Portfolio</h1>
             <nav>
                 <ul>
-                    <li>PROJETS</li>
-                    <li>ETUDES</li>
-                    <li>ARTICLES</li>
-                    <li>CONTACT</li>
+                    <li class="menu-derourant">
+                        <a href="#">PROJECT</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Project 1</a></li>
+                            <li><a href="#">Project 2</a></li>
+                            <li><a href="#">Project 3</a></li>
+                        </ul>
+
+                    </li>
+                        
+                    <li><a href="#">ETUDES</a></li>
+                    <li class="menu-derourant">
+                        <a href="#">ARTICLES</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Articles 1</a></li>
+                            <li><a href="#">Articles 2</a></li>
+                            <li><a href="#">Articles 3</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
     
         <section id="bannierepresentation">
             <article>
-            <a href="https://via.placeholder.com" ></a> <img src="https://via.placeholder.com/1268x500/000000/FFFFFF/?text=HERO" alt="Image representant le Developpeur dont porte le portfolio">
+            <img id="hero" class="img" src="./Assets/road-g25f25bc51_1920.jpg" alt="Image representant le Developpeur dont porte le portfolio">
             <h2 id="nomprenomhero">NOM PRENOM</h2> 
             </article>
         </section>
-        <H2>PROJETS</H2>
+        <H2 id="titre">PROJETS</H2>
         <section id="projet">
             <article class="work">
-                <a href="https://via.placeholder.com" ></a> <img src="https://via.placeholder.com/800x300/000000/FFFFFF/?text=PROJET" alt="image décrivant le premier projet effectuer par le developpeur">
+                <img class="white" src="https://via.placeholder.com/800x300/" alt="image décrivant le premier projet effectuer par le developpeur"></a>
                 <H3 class="titreprojet">Project 1</H3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, pariatur animi vero culpa cumque quaerat nihil cum laboriosam rerum esse doloremque voluptates cupiditate earum dolore excepturi temporibus accusantium sit expedita.
                 Nisi officiis sint ullam vitae corrupti, ducimus aut beatae nihil perspiciatis doloremque illum accusamus fuga sunt? Ipsam porro autem sint pariatur. Eum quas sit, quo recusandae perspiciatis labore voluptatem ut!</p>
             </article>
             <article class="work">
-                <a href="https://via.placeholder.com" ></a> <img src="https://via.placeholder.com/800x300/000000/FFFFFF/?text=PROJET2" alt="image décrivant le deuxième projet effectuer par le developpeur">
+                <img class="img" src="https://via.placeholder.com/800x300/000000/FFFFFF/?text=PROJET2" alt="image décrivant le deuxième projet effectuer par le developpeur">
                 <H3  class="titreprojet">Project 2</H3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, pariatur animi vero culpa cumque quaerat nihil cum laboriosam rerum esse doloremque voluptates cupiditate earum dolore excepturi temporibus accusantium sit expedita.
                 Nisi officiis sint ullam vitae corrupti, ducimus aut beatae nihil perspiciatis doloremque illum accusamus fuga sunt? Ipsam porro autem sint pariatur. Eum quas sit, quo recusandae perspiciatis labore voluptatem ut!</p>
             </article>
             <article class="work">
-                <a href="https://via.placeholder.com" ></a> <img src="https://via.placeholder.com/800x300/000000/FFFFFF/?text=PROJET3" alt="image décrivant le troisième projet effectuer par le developpeur">
+                <img class="img" src="https://via.placeholder.com/800x300/000000/FFFFFF/?text=PROJET3" alt="image décrivant le troisième projet effectuer par le developpeur">
                 <H3 class="titreprojet">Project 3</H3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, pariatur animi vero culpa cumque quaerat nihil cum laboriosam rerum esse doloremque voluptates cupiditate earum dolore excepturi temporibus accusantium sit expedita.
                 Nisi officiis sint ullam vitae corrupti, ducimus aut beatae nihil perspiciatis doloremque illum accusamus fuga sunt? Ipsam porro autem sint pariatur. Eum quas sit, quo recusandae perspiciatis labore voluptatem ut!</p>
@@ -53,7 +74,7 @@
 
         <h2>ETUDES</h2>
         <section id="etude">
-            <a href="https://via.placeholder.com" ></a> <img src="https://via.placeholder.com/300/000000/FFFFFF/?text=PHOTO" alt="Photo du Developpeur">
+            <img class="img" src="https://via.placeholder.com/300/000000/FFFFFF/?text=PHOTO" alt="Photo du Developpeur">
             <ul id="info">
                 <li>NOM</li>
                 <li>PRENOM</li>
