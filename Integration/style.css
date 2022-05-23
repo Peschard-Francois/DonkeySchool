@@ -46,12 +46,84 @@ li{
     text-align: center;
     list-style: none;
     font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
     font-weight: bolder;
-    background-color: black;
+    
     color: white;
     width: 100px;
     height: 25px;
 }
+
+.sous-menu{
+
+    display: none;
+    
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+
+}
+
+nav > ul li:hover .sous-menu{
+
+    display: block;
+}
+
+
+.sous-menu li{
+
+    float: none;
+    width: 100%;
+    text-align: center;}
+
+.sous-menu a{
+
+    padding: 1px;
+    border-bottom: none;
+}
+
+.sous-menu a:hover{
+
+    border-bottom: none;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+a:visited{
+
+    color:white
+    
+    ;
+}
+
+
+nav ul li{
+
+    float: center;
+    
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***************************SECTION BANNIERE*******************************/
