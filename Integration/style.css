@@ -1,4 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-size: 62.5%;  technique pour rem fasse 10px plus simple pour donner des mesures car a 62.5% 1rem =10px au lieux de 100%  1rem=16px*/
+}
+
+
+
 body{
 
     background-image: url(./Assets/89250.jpg);
 }
+
+/***********************************HEADER**********************************/
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    /*font-family: 'Kaushan Script', cursive;*/
+    /*font-family: 'Playball', cursive;*/
+    font-family: 'Smooch', cursive;
+    font-size: 5rem;
+}
+
+nav{
+    width: 70%;
+    margin-right: 10rem;
+}
+
+ul{
+    display: flex;
+    justify-content:flex-end;
+    gap: 5rem;
+}
+
+li{
+
+    text-align: center;
+    list-style: none;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+
+/***************************SECTION BANNIERE*******************************/
+
+
+
+#bannierepresentation{
+
+    
+
+
+}
+
+#hero{
+
+    width: 100%;
+ }
+
+
+#titre{
+
+    margin-top: 3rem;
+
+ }
+
+ .img:hover{
+
+    opacity: 0.4;
+
+ }
+
+ img{
+
+    border-radius: 3px;
+ }
+
