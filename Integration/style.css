@@ -9,10 +9,19 @@
 
 body{
 
-    background-image: url(./Assets/89250.jpg);
+    background-color: gray;
 }
 
+
+
 /***********************************HEADER**********************************/
+
+.bigmac{
+
+    display: none;
+}
+
+
 
 header{
 
@@ -176,4 +185,45 @@ section:nth-child(2){
 
     filter: grayscale(1);
 
+}
+
+
+
+
+
+
+
+/******************************MEDIA QUERIEs***********************************/
+
+
+@media (max-width : 600px) {
+
+    body{
+
+        background-color: black;
+    }
+
+    h1,h2,h3{
+        color: white;
+    }
+    
+    nav > ul{
+
+        display:none
+    }
+
+    .bigmac{
+
+        display: block;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #iconeburger{
+
+        width: 150px;
+        height: 150px;
+        margin-left: 100%;
+
+    }
 }
