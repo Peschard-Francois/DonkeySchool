@@ -6,163 +6,253 @@
 }
 
 
-
 body{
 
-    background-color: gray;
+    font-family: 'Mitr', sans-serif;
+
 }
-
-
-
-/***********************************HEADER**********************************/
 
 .bigmac{
 
     display: none;
 }
 
-
+/***********************************HEADER**********************************/
 
 header{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h1{
-    width: 100%;
-    text-align: center;
-    /*font-family: 'Kaushan Script', cursive;*/
-    /*font-family: 'Playball', cursive;*/
-    font-family: 'Smooch', cursive;
-    font-size: 5rem;
+    background-color: rgb(10, 72, 116);
+    height: 40%;
 }
 
 nav{
-    width: 70%;
-    margin-right: 10rem;
+
+    width: 100%;
+    height: 10rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 ul{
+
     display: flex;
-    justify-content:flex-end;
+    flex-wrap: wrap;
     gap: 5rem;
-}
-
-li{
-
-    text-align: center;
-    list-style: none;
-    font-family: 'Kaushan Script', cursive;
     font-size: 1.5rem;
-    font-weight: bolder;
-    
-    color: white;
-    width: 100px;
-    height: 25px;
+    font-family: 'Mitr', sans-serif;
 }
 
+a:link{
 
-/***************************MENU DEROULANT**********************************/
-
-.sous-menu{
-
-    display: none;
-    
-    background-color: blue;
-    position: absolute;
-    width: 100%;
-
+    text-decoration: none;
 }
 
-nav > ul li:hover .sous-menu{
-
-    display: block;
-}
-
-
-.sous-menu li{
-
-    float: none;
-    width: 100%;
-    text-align: center;}
-
-.sous-menu a{
-
-    padding: 1px;
-    border-bottom: none;
-}
-
-.sous-menu a:hover{
-
-    border-bottom: none;
-    background-color: aqua;
-    font-size: 20px;
-}
 
 a:visited{
 
-    color:white
-    
-    ;
+    color:white;
 }
 
 
 
 
-nav ul li{
+li{
 
-    float: center;
     
-    width: 25%;
-    text-align: center;
-    position: relative;
+    list-style: none;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***************************SECTION BANNIERE*******************************/
-
-
-
-#bannierepresentation{
+h1{
 
     
-
-
+    color: white;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    /*font-family: 'Merienda', cursive;
+    font-family: 'Mitr', sans-serif;*/
 }
 
-#hero{
+h2 {
+
+    font-family: 'Mitr', sans-serif;
+    font-size: 2rem;
+}
+
+
+#banniere{
+
+    background-image: url(./Assets/luke-stackpoole-ZRsJmpt9pNI-unsplash.jpg);
+    background-size: cover;
+}
+
+
+#banniere > article{
 
     width: 100%;
-    height: 10%;
- }
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/**********************************PROJET********************************* */
+
+#projet{
 
 
-#titre{
+    background-color: rgb(10, 72, 116);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
 
-    margin-top: 3rem;
+.work{
 
- }
+    margin-top: 1rem;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+p{
+
+    text-align: left;
+    width: 70%;
+    height: 5%;
+    font-size: 1.3rem;
+    height: fit-content;
+}
+
+h3{
+
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(95, 203, 153);
+}
+
+
+h4{
+
+    font-size: 2rem;
+
+
+}
+
+
+.img{
+
+    width: 450px;
+    height: 200px;
+}
+
+
+/*********************************ETUDES************************************/
+
+
+
+#etude{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#info{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.etapeetude{
+
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/********************************FORMULAIRE********************************/
+
+form{
+
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(163, 163, 163);
+    
+    
+}
+
+input{
+    
+    width: 20%;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 2px;
+   
+    font-weight: bold;
+
+}
+
+input:focus{
+
+    background-color: rgb(42, 106, 226);
+    color: white;
+}
+
+label{
+
+    margin-top: 1rem;
+}
+
+textarea:focus{
+
+    width: 50%;
+}
+
+button{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+    background-color:rgb(42, 106, 226);;
+    color: white;
+    border: 5px;
+    cursor: pointer;
+
+}
+
+/*******************************FOOTER************************************/
+
+
+footer{
+
+    background-color: rgb(0, 149, 255);
+     position: absolute;
+     width: 100%;
+     height: 100px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+
 /*************************METtRE UN EFFET TRANCSULIDE*********************/
 section > article img:hover{
 
@@ -173,12 +263,13 @@ section > article img:hover{
 /*************************METTRE UN EFFET ARRONDI AU IMAGE 3 px***********/
 
 
- img{
+img{
 
     border-radius: 3px;
  }
 
- /************METTRE UNE IMAGE EN NOIR ET BLANC SANS ID OU CLASSE********************************************/
+
+  /************METTRE UNE IMAGE EN NOIR ET BLANC SANS ID OU CLASSE********************************************/
 
 section:nth-child(2){
 
@@ -189,41 +280,128 @@ section:nth-child(2){
 
 
 
+/*********************************MENU DEROULANT****************************/
+.sous-menu{
+
+    display: none;
+    
+    background-color:rgb(42, 106, 226);
+    position: absolute;
+
+    
+}
+
+
+
+nav > ul > li{
+
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+
+    content: "" ;
+    display: block;
+    clear: both;
+
+}
+
+nav a{
+
+    display: block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+
+    padding: 20px 30px;
+}
+
+nav li:hover .sous-menu{
+
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
 
 
 
 
-/******************************MEDIA QUERIEs***********************************/
+.sous-menu li{
 
+    border-bottom: 1px solid #ccc;
+}
+
+.sous-menu li a{
+
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 160px;
+}
+
+a:hover{
+
+    background-color: white;
+    color: red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************MEDIA QUERIES****************************/
 
 @media (max-width : 600px) {
 
-    body{
+   
 
-        background-color: black;
-    }
+    .menu{
 
-    h1,h2,h3{
-        color: white;
-    }
-    
-    nav > ul{
 
-        display:none
+        display: none;
     }
 
     .bigmac{
 
-        display: block;
-        width: 2rem;
-        height: 2rem;
+        display: inline;
+        width: 80px;
+        height: 80px;
     }
 
-    #iconeburger{
+    footer > ul {
 
-        width: 150px;
-        height: 150px;
-        margin-left: 100%;
-
+        font-size: 1rem;
+        gap: 1rem;
+        
     }
 }
+
+
+
+/*    
+@media screen and (min-width : 1281px){}
+
+@media screen and (min-width : 1025px) and (max-width : 1290px){}
+
+@media screen and (min-width : 769px) and (max-width : 1024px){}
+
+@media screen and (min-width : 481px) and (max-width : 768px){}
+
+@media screen and (max-width : 480px){}*/
